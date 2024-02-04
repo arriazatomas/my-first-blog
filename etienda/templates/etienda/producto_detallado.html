@@ -1,0 +1,10 @@
+{% extends "etienda/base.html" %}
+
+{% block content %}
+    <div class="detalle_producto">
+        <p> {{ producto.image }}</p>
+        <h2>{{ producto.title }}</h2>
+        <p>{{ producto.price }}</p>
+        <p>{{ producto.description|linebreaksbr }}</p>
+    </div>
+{% endblock %}
