@@ -2,6 +2,9 @@
 
 {% block content %}
     <div class="detalle_producto">
+        {% if user.is_authenticated %}
+        <a class="btn btn-default" href="{% url 'producto_editar' pk=producto.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+        {% endif %}
         <p> {{ producto.image }}</p>
         <h2>{{ producto.title }}</h2>
         <p>{{ producto.price }}</p>
