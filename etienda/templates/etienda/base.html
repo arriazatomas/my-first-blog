@@ -3,9 +3,9 @@
 <html>
     <head>
         <title>Etienda</title>
+        <link type="text/css" rel="stylesheet" href='{% static "css/productos.css" %}'>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="{% static 'css/productos.css' %}">
     </head>
     <body>
         <div class="titulo">
@@ -15,7 +15,7 @@
             <h1>La Etienda</h1>
         </div>
         
-        <div>
+        <div class="pagina_general">
             {% block content %}
             {% endblock %}
         </div>

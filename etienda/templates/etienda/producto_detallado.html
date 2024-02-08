@@ -1,7 +1,7 @@
 {% extends "etienda/base.html" %}
 
 {% block content %}
-    <div class="detalle_producto">
+    <div class="producto">
         {% if user.is_authenticated %}
         <a class="btn btn-default" href="{% url 'producto_editar' pk=producto.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
         {% endif %}

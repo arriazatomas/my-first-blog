@@ -2,8 +2,8 @@
 
 {% block content %}
     {% for producto in productos %}
-        <div>
-            <p> {{ producto.image }}</p>
+        <div class="producto">
+            <img src="{{ producto.image.url }}" alt="">
             <h2><a href="{% url 'producto_detallado' pk=producto.pk %}">{{ producto.title }}</a></h2>
             <p>{{ producto.price }}</p>
         </div>
