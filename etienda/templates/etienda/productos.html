@@ -4,8 +4,8 @@
     {% for producto in productos %}
         <div>
             <p> {{ producto.image }}</p>
-            <h2><a href="% url 'producto_detallado' pk=producto.pk">{{ post.title }}</a></h2>
-            <p>{{ post.description|linebreaksbr }}</p>
+            <h2><a href="{% url 'producto_detallado' pk=producto.pk %}">{{ producto.title }}</a></h2>
+            <p>{{ producto.price }}</p>
         </div>
     {% endfor %}
 {% endblock %}

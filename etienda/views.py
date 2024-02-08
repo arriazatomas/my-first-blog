@@ -5,8 +5,8 @@ from .form import ProductoForm
 # Create your views here.
 
 def productos(request):
-    productos = Producto.objects.order_by('-category')
-    return render(request, 'etienda/productos.html')
+    productos = Producto.objects.order_by('category')
+    return render(request, 'etienda/productos.html', {'productos': productos})
 
 def producto_detallado(request, pk):
     producto = Producto.objects.get(pk=pk)
